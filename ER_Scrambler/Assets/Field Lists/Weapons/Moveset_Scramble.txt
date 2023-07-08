@@ -1,0 +1,7 @@
+wepmotionCategory
+guardmotionCategory
+spAtkCategory
+wepmotionOneHandId
+wepmotionBothHandId
+swordArtId
+wepAbsorpPosId

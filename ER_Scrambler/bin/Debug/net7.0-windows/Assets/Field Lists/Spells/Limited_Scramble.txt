@@ -1,0 +1,16 @@
+mp
+stamina
+mp_charge
+stamina_charge
+consumeSA
+consumeLoopMP_forMenu
+slotLength
+requirementIntellect
+requirementFaith
+requirementLuck
+refType
+castSfxId
+fireSfxId
+effectSfxId
+subCategory1
+subCategory2
