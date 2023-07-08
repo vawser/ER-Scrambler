@@ -15,3 +15,4 @@ To run the mod, I recommend you use [ModEngine2](https://github.com/soulsmods/Mo
 # Credits
 * [SoulsFormats](https://github.com/JKAnderson/SoulsFormats) by TKGP.
 * [Irregulator](https://github.com/JKAnderson/Irregulator) by TKGP.
+* [DSMS](https://github.com/soulsmods/DSMapStudio) by the DSMS Team.
