@@ -197,7 +197,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(267, 113);
+            this.label20.Location = new System.Drawing.Point(252, 112);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(270, 15);
             this.label20.TabIndex = 16;
@@ -216,7 +216,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(267, 74);
+            this.label12.Location = new System.Drawing.Point(252, 73);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(316, 30);
             this.label12.TabIndex = 14;
@@ -236,7 +236,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(267, 35);
+            this.label4.Location = new System.Drawing.Point(252, 31);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(281, 30);
             this.label4.TabIndex = 3;
@@ -256,7 +256,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(267, 7);
+            this.label3.Location = new System.Drawing.Point(252, 6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 15);
             this.label3.TabIndex = 1;
@@ -293,7 +293,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(267, 99);
+            this.label13.Location = new System.Drawing.Point(252, 104);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(281, 30);
             this.label13.TabIndex = 14;
@@ -303,7 +303,7 @@
             // c_Weapon_AnyVFX
             // 
             this.c_Weapon_AnyVFX.AutoSize = true;
-            this.c_Weapon_AnyVFX.Location = new System.Drawing.Point(6, 95);
+            this.c_Weapon_AnyVFX.Location = new System.Drawing.Point(6, 104);
             this.c_Weapon_AnyVFX.Name = "c_Weapon_AnyVFX";
             this.c_Weapon_AnyVFX.Size = new System.Drawing.Size(101, 19);
             this.c_Weapon_AnyVFX.TabIndex = 13;
@@ -313,7 +313,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(267, 57);
+            this.label11.Location = new System.Drawing.Point(252, 66);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(316, 30);
             this.label11.TabIndex = 12;
@@ -323,7 +323,7 @@
             // c_Weapon_AnySpEffect
             // 
             this.c_Weapon_AnySpEffect.AutoSize = true;
-            this.c_Weapon_AnySpEffect.Location = new System.Drawing.Point(6, 56);
+            this.c_Weapon_AnySpEffect.Location = new System.Drawing.Point(6, 65);
             this.c_Weapon_AnySpEffect.Name = "c_Weapon_AnySpEffect";
             this.c_Weapon_AnySpEffect.Size = new System.Drawing.Size(124, 19);
             this.c_Weapon_AnySpEffect.TabIndex = 11;
@@ -333,11 +333,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(267, 31);
+            this.label5.Location = new System.Drawing.Point(252, 31);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(356, 15);
+            this.label5.Size = new System.Drawing.Size(383, 30);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Only scramble values such as Damage, Scaling, Requirements, etc.";
+            this.label5.Text = "Only scramble a set of specified fields. \r\nThe list of fields can be found in the" +
+    " Assets/Field Lists/Weapons/ folder.";
             // 
             // c_Weapon_RestrictedScramble
             // 
@@ -352,7 +353,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(267, 6);
+            this.label8.Location = new System.Drawing.Point(252, 6);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(227, 15);
             this.label8.TabIndex = 2;
@@ -387,7 +388,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(267, 57);
+            this.label10.Location = new System.Drawing.Point(253, 69);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(316, 30);
             this.label10.TabIndex = 10;
@@ -397,7 +398,7 @@
             // c_Rings_AnySpEffect
             // 
             this.c_Rings_AnySpEffect.AutoSize = true;
-            this.c_Rings_AnySpEffect.Location = new System.Drawing.Point(6, 56);
+            this.c_Rings_AnySpEffect.Location = new System.Drawing.Point(6, 69);
             this.c_Rings_AnySpEffect.Name = "c_Rings_AnySpEffect";
             this.c_Rings_AnySpEffect.Size = new System.Drawing.Size(124, 19);
             this.c_Rings_AnySpEffect.TabIndex = 9;
@@ -407,11 +408,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(267, 31);
+            this.label6.Location = new System.Drawing.Point(253, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(274, 15);
+            this.label6.Size = new System.Drawing.Size(363, 30);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Only scramble values such as Weight and SpEffect.";
+            this.label6.Text = "Only scramble a set of specified fields. \r\nThe list of fields can be found in the" +
+    " Assets/Field Lists/Rings/ folder.\r\n";
             // 
             // c_Rings_RestrictedScramble
             // 
@@ -426,7 +428,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(267, 6);
+            this.label7.Location = new System.Drawing.Point(253, 6);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(236, 15);
             this.label7.TabIndex = 6;
@@ -461,7 +463,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(267, 57);
+            this.label9.Location = new System.Drawing.Point(253, 68);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(316, 30);
             this.label9.TabIndex = 16;
@@ -471,7 +473,7 @@
             // c_Armor_AnySpEffect
             // 
             this.c_Armor_AnySpEffect.AutoSize = true;
-            this.c_Armor_AnySpEffect.Location = new System.Drawing.Point(6, 56);
+            this.c_Armor_AnySpEffect.Location = new System.Drawing.Point(6, 67);
             this.c_Armor_AnySpEffect.Name = "c_Armor_AnySpEffect";
             this.c_Armor_AnySpEffect.Size = new System.Drawing.Size(124, 19);
             this.c_Armor_AnySpEffect.TabIndex = 15;
@@ -481,11 +483,12 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(267, 31);
+            this.label14.Location = new System.Drawing.Point(253, 31);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(331, 15);
+            this.label14.Size = new System.Drawing.Size(368, 30);
             this.label14.TabIndex = 14;
-            this.label14.Text = "Only scramble values such as Absorption, Poise, SpEffect, etc.";
+            this.label14.Text = "Only scramble a set of specified fields. \r\nThe list of fields can be found in the" +
+    " Assets/Field Lists/Armor/ folder.\r\n";
             // 
             // c_Armor_LimitedScramble
             // 
@@ -500,7 +503,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(267, 6);
+            this.label15.Location = new System.Drawing.Point(253, 6);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(232, 15);
             this.label15.TabIndex = 12;
@@ -535,7 +538,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(267, 60);
+            this.label19.Location = new System.Drawing.Point(251, 66);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(281, 30);
             this.label19.TabIndex = 24;
@@ -545,7 +548,7 @@
             // c_Spell_AnyVFX
             // 
             this.c_Spell_AnyVFX.AutoSize = true;
-            this.c_Spell_AnyVFX.Location = new System.Drawing.Point(6, 56);
+            this.c_Spell_AnyVFX.Location = new System.Drawing.Point(6, 66);
             this.c_Spell_AnyVFX.Name = "c_Spell_AnyVFX";
             this.c_Spell_AnyVFX.Size = new System.Drawing.Size(101, 19);
             this.c_Spell_AnyVFX.TabIndex = 23;
@@ -555,11 +558,12 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(267, 31);
+            this.label17.Location = new System.Drawing.Point(251, 31);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(302, 15);
+            this.label17.Size = new System.Drawing.Size(364, 30);
             this.label17.TabIndex = 20;
-            this.label17.Text = "Only scramble values such as FP, referenced bullets, etc.";
+            this.label17.Text = "Only scramble a set of specified fields. \r\nThe list of fields can be found in the" +
+    " Assets/Field Lists/Spells/ folder.\r\n";
             // 
             // c_Spell_LimitedScramble
             // 
@@ -574,7 +578,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(267, 6);
+            this.label18.Location = new System.Drawing.Point(251, 6);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(152, 15);
             this.label18.TabIndex = 18;
@@ -609,7 +613,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(267, 56);
+            this.label23.Location = new System.Drawing.Point(250, 67);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(331, 15);
             this.label23.TabIndex = 26;
@@ -618,7 +622,7 @@
             // c_Goods_Skip_KeyItems
             // 
             this.c_Goods_Skip_KeyItems.AutoSize = true;
-            this.c_Goods_Skip_KeyItems.Location = new System.Drawing.Point(6, 56);
+            this.c_Goods_Skip_KeyItems.Location = new System.Drawing.Point(6, 67);
             this.c_Goods_Skip_KeyItems.Name = "c_Goods_Skip_KeyItems";
             this.c_Goods_Skip_KeyItems.Size = new System.Drawing.Size(114, 19);
             this.c_Goods_Skip_KeyItems.TabIndex = 25;
@@ -628,11 +632,12 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(267, 31);
+            this.label21.Location = new System.Drawing.Point(250, 31);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(288, 15);
+            this.label21.Size = new System.Drawing.Size(368, 30);
             this.label21.TabIndex = 24;
-            this.label21.Text = "Only scramble values such as VFX and use animation.";
+            this.label21.Text = "Only scramble a set of specified fields. \r\nThe list of fields can be found in the" +
+    " Assets/Field Lists/Goods/ folder.\r\n";
             // 
             // c_Goods_LimitedScramble
             // 
@@ -647,7 +652,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(267, 6);
+            this.label22.Location = new System.Drawing.Point(250, 6);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(180, 15);
             this.label22.TabIndex = 22;
@@ -682,7 +687,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(267, 60);
+            this.label26.Location = new System.Drawing.Point(252, 69);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(177, 15);
             this.label26.TabIndex = 27;
@@ -691,7 +696,7 @@
             // c_Scramble_Faces
             // 
             this.c_Scramble_Faces.AutoSize = true;
-            this.c_Scramble_Faces.Location = new System.Drawing.Point(6, 56);
+            this.c_Scramble_Faces.Location = new System.Drawing.Point(6, 69);
             this.c_Scramble_Faces.Name = "c_Scramble_Faces";
             this.c_Scramble_Faces.Size = new System.Drawing.Size(107, 19);
             this.c_Scramble_Faces.TabIndex = 26;
@@ -701,11 +706,12 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(267, 31);
+            this.label25.Location = new System.Drawing.Point(252, 31);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(225, 15);
+            this.label25.Size = new System.Drawing.Size(390, 30);
             this.label25.TabIndex = 25;
-            this.label25.Text = "Only scramble values such as equipment.";
+            this.label25.Text = "Only scramble a set of specified fields. \r\nThe list of fields can be found in the" +
+    " Assets/Field Lists/Characters/ folder.\r\n";
             // 
             // c_Char_LimitedScramble
             // 
@@ -720,7 +726,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(267, 6);
+            this.label24.Location = new System.Drawing.Point(252, 7);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(201, 15);
             this.label24.TabIndex = 22;
@@ -761,7 +767,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(267, 6);
+            this.label16.Location = new System.Drawing.Point(251, 6);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(264, 15);
             this.label16.TabIndex = 20;
