@@ -12,6 +12,13 @@ Inspired by TKGP's [Irregulator](https://github.com/JKAnderson/Irregulator) for 
 
 To run the mod, I recommend you use [ModEngine2](https://github.com/soulsmods/ModEngine2).
 
+# Features
+By default each Scramble option will scramble all fields within the param. 
+
+Selecting the *Use Limited Scramble* will restrict the fields scrambled to a list found in *Assets/Field Lists/*. 
+
+These lists can be modified if you wish to change how the Limited Scramble works.
+
 # Credits
 * [SoulsFormats](https://github.com/JKAnderson/SoulsFormats) by TKGP.
 * [Irregulator](https://github.com/JKAnderson/Irregulator) by TKGP.
