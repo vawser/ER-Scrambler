@@ -1,0 +1,12 @@
+hp
+defense
+breakSfxId
+breakLandingSfxId
+isBreakByPlayerCollide
+isBreakByEnemyCollide
+isBreak_ByChrRide
+isBreakByHugeenemyCollide
+burnSfxId
+burnSfxId_1
+burnSfxId_2
+burnSfxId_3

@@ -48,16 +48,10 @@ namespace ER_Scrambler
         public ParamWrapper atkNpcParam;
         public ParamWrapper bulletParam;
         public ParamWrapper speffectParam;
+        public ParamWrapper itemlotMapParam;
+        public ParamWrapper itemlotEnemyParam;
 
         public List<string> VFX_ID_List;
-
-        public List<int> atkAttribute_List = new List<int> { 0, 1, 2, 3 };
-        public List<int> spAttribute_List = new List<int> { 0, 10, 11, 12, 13, 20, 21, 22, 23, 24, 25, 26 };
-        public List<int> materialAttackType_List = new List<int> { 0, 1, 2, 3 };
-        public List<int> attackMaterial_List = new List<int> { 0, 1, 2, 3, 4, 6, 254 };
-        public List<int> launchType_List = new List<int> { 0, 1, 2, 3, 4, 5, 6 };
-        public List<int> followType_List = new List<int> { 0, 1, 2, 3, 4, 5 };
-        public List<int> emitterType_List = new List<int> { 0, 1, 2, 3, 4, 5, 6 };
 
         public string fieldListPath = AppContext.BaseDirectory + "\\Assets\\Field Lists\\";
         public string referenceListPath = AppContext.BaseDirectory + "\\Assets\\Reference Lists\\";
@@ -66,6 +60,7 @@ namespace ER_Scrambler
         private static byte[] bowCategory_List = { 10, 11 };
         private static byte[] catalystCategory_List = { 8 };
 
+        public List<string> Bullet_Limited_Scramble;
         public List<string> Weapons_Limited_Scramble;
         public List<string> Weapons_Moveset_Scramble;
         public List<string> Rings_Limited_Scramble;
@@ -73,7 +68,8 @@ namespace ER_Scrambler
         public List<string> Spell_Limited_Scramble;
         public List<string> Goods_Limited_Scramble;
         public List<string> Characters_Limited_Scramble;
-        public List<string> Enemies_Limited_Scramble;
+        public List<string> Faces_Limited_Scramble;
+        public List<string> Assets_Limited_Scramble;
 
         #region Scramble - Core
         public Scrambler(string seed, Mod current_mod, List<ParamWrapper> paramWrappers)
@@ -104,10 +100,19 @@ namespace ER_Scrambler
                 {
                     speffectParam = wrapper;
                 }
+                if (wrapper.Name == "ItemLotParam_map")
+                {
+                    itemlotMapParam = wrapper;
+                }
+                if (wrapper.Name == "ItemLotParam_enemy")
+                {
+                    itemlotEnemyParam = wrapper;
+                }
             }
 
             // Build scramble lists 
             VFX_ID_List = BuildScrambleList(referenceListPath + "\\VFX_List.txt");
+            Bullet_Limited_Scramble = BuildScrambleList(fieldListPath + "\\Bullets\\Limited_Scramble.txt");
             Weapons_Limited_Scramble = BuildScrambleList(fieldListPath + "\\Weapons\\Limited_Scramble.txt");
             Weapons_Moveset_Scramble = BuildScrambleList(fieldListPath + "\\Weapons\\Moveset_Scramble.txt");
             Rings_Limited_Scramble = BuildScrambleList(fieldListPath + "\\Rings\\Limited_Scramble.txt");
@@ -115,7 +120,8 @@ namespace ER_Scrambler
             Spell_Limited_Scramble = BuildScrambleList(fieldListPath + "\\Spells\\Limited_Scramble.txt");
             Goods_Limited_Scramble = BuildScrambleList(fieldListPath + "\\Goods\\Limited_Scramble.txt");
             Characters_Limited_Scramble = BuildScrambleList(fieldListPath + "\\Characters\\Limited_Scramble.txt");
-            Enemies_Limited_Scramble = BuildScrambleList(fieldListPath + "\\Enemies\\Limited_Scramble.txt");
+            Faces_Limited_Scramble = BuildScrambleList(fieldListPath + "\\Faces\\Limited_Scramble.txt");
+            Assets_Limited_Scramble = BuildScrambleList(fieldListPath + "\\Assets\\Limited_Scramble.txt");
         }
 
         private List<string> BuildScrambleList(string path)
@@ -132,15 +138,32 @@ namespace ER_Scrambler
         #endregion
 
         #region Scramble - Bullet
-        public List<ParamWrapper> ScrambleBullet(bool useAnyVFX, bool useAnySpEffect)
+        public List<ParamWrapper> ScrambleBullet(bool useLimitedScramble, bool useAnyVFX, bool useAnySpEffect, bool useSpam)
         {
             foreach (ParamWrapper wrapper in loadedParamWrappers)
             {
                 if (wrapper.Name == "Bullet")
                 {
-                    RandomizeAll(wrapper.Rows);
+                    PARAM param = wrapper.Param;
+                    var param_rows = param.Rows;
 
-                    foreach (PARAM.Row row in wrapper.Rows)
+                    if (useLimitedScramble)
+                    {
+                        RandomizeFromList(param_rows, Bullet_Limited_Scramble);
+                    }
+                    else
+                    {
+                        if (useSpam)
+                        {
+                            RandomizeAll(param_rows, true);
+                        }
+                        else
+                        {
+                            RandomizeAll(param_rows);
+                        }
+                    }
+
+                    foreach (PARAM.Row row in param_rows)
                     {
                         foreach (PARAM.Cell cell in row.Cells)
                         {
@@ -540,19 +563,79 @@ namespace ER_Scrambler
         }
         #endregion
 
-        #region Scramble - Misc
-        public List<ParamWrapper> ScrambleMisc(bool scrambleAssetParam)
+        #region Scramble - Assets
+        public List<ParamWrapper> ScrambleAssets(bool useLimitedScramble, bool useAnyVFX, bool scramblePickups)
         {
             foreach (ParamWrapper wrapper in loadedParamWrappers)
             {
-                PARAM param = wrapper.Param;
-                var param_rows = param.Rows;
-
-                if(scrambleAssetParam)
+                if (wrapper.Name == "AssetEnvironmentGeometryParam")
                 {
-                    if (wrapper.Name == "AssetEnvironmentGeometryParam")
+                    PARAM param = wrapper.Param;
+                    var param_rows = param.Rows;
+
+                    if (useLimitedScramble)
+                    {
+                        RandomizeFromList(param_rows, Assets_Limited_Scramble);
+                    }
+                    else
                     {
                         RandomizeAll(param_rows);
+                    }
+
+                    foreach (PARAM.Row row in param_rows)
+                    {
+                        foreach (PARAM.Cell cell in row.Cells)
+                        {
+                            string cType = cell.Def.DisplayType.ToString();
+                            string cName = cell.Def.InternalName;
+
+                            // Use any VFX
+                            if (useAnyVFX)
+                            {
+                                List<string> sfxFields = new List<string> {
+                                    "breakSfxId",
+                                    "breakLandingSfxId",
+                                    "breakLandingSfxId",
+                                    "burnSfxId_1",
+                                    "burnSfxId_2",
+                                    "burnSfxId_3"
+                                };
+
+                                foreach (string name in sfxFields)
+                                {
+                                    if (cName == name)
+                                    {
+                                        var index = rand.Next(VFX_ID_List.Count);
+                                        var randomItem = VFX_ID_List[index];
+
+                                        cell.Value = int.Parse(randomItem);
+                                    }
+                                }
+                            }
+
+                            // Scramble pickups
+                            if(scramblePickups)
+                            {
+                                List<string> itemlotFields = new List<string> {
+                                    "breakItemLotParamId",
+                                    "pickUpItemLotParamId",
+                                    "pickUpReplacementItemLotParamId",
+                                    "repickItemLotParamId",
+                                    "repickReplacementItemLotParamId"
+                                };
+
+                                foreach (string name in itemlotFields)
+                                {
+                                    if (cName == name)
+                                    {
+                                        var index = rand.Next(itemlotMapParam.Rows.Count);
+                                        var randomItem = itemlotMapParam.Rows[index];
+
+                                        cell.Value = randomItem.ID;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -593,35 +676,49 @@ namespace ER_Scrambler
         #endregion
 
         #region Scramble - Characters
-        public List<ParamWrapper> ScrambleCharacters(bool scrambleCharacters, bool scrambleFaces, bool useLimitedScramble)
+        public List<ParamWrapper> ScrambleCharacters(bool useLimitedScramble, bool ignorePlayerClasses)
         {
             foreach (ParamWrapper wrapper in loadedParamWrappers)
             {
                 if (wrapper.Name == "CharaInitParam")
                 {
-                    if (scrambleCharacters)
-                    {
-                        PARAM param = wrapper.Param;
-                        var param_rows = param.Rows;
+                    PARAM param = wrapper.Param;
+                    var param_rows = param.Rows;
 
-                        if (useLimitedScramble)
-                        {
-                            RandomizeFromList(param_rows, Characters_Limited_Scramble);
-                        }
-                        else
-                        {
-                            RandomizeAll(param_rows);
-                        }
+                    if (ignorePlayerClasses)
+                        param_rows = param.Rows.Where(row => row.ID >= 4000).ToList();
+
+                    if (useLimitedScramble)
+                    {
+                        RandomizeFromList(param_rows, Characters_Limited_Scramble);
+                    }
+                    else
+                    {
+                        RandomizeAll(param_rows);
                     }
                 }
+            }
 
+            return loadedParamWrappers;
+        }
+        #endregion
+
+        #region Scramble - Faces
+        public List<ParamWrapper> ScrambleFaces(bool useLimitedScramble)
+        {
+            foreach (ParamWrapper wrapper in loadedParamWrappers)
+            {
                 if (wrapper.Name == "FaceParam")
                 {
-                    if (scrambleFaces)
-                    {
-                        PARAM param = wrapper.Param;
-                        var param_rows = param.Rows;
+                    PARAM param = wrapper.Param;
+                    var param_rows = param.Rows;
 
+                    if (useLimitedScramble)
+                    {
+                        RandomizeFromList(param_rows, Faces_Limited_Scramble);
+                    }
+                    else
+                    {
                         RandomizeAll(param_rows);
                     }
                 }

@@ -36,7 +36,9 @@
             this.folderBrowserDialog_ModPath = new System.Windows.Forms.FolderBrowserDialog();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage_Bullet = new System.Windows.Forms.TabPage();
+            this.tab_Bullets = new System.Windows.Forms.TabPage();
+            this.label27 = new System.Windows.Forms.Label();
+            this.c_Bullet_LimitedScramble = new System.Windows.Forms.CheckBox();
             this.label20 = new System.Windows.Forms.Label();
             this.c_Bullet_Spam = new System.Windows.Forms.CheckBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -45,7 +47,7 @@
             this.c_Bullet_AnyVFX = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.c_Scramble_Bullet = new System.Windows.Forms.CheckBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tab_Weapons = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
             this.c_Weapon_AnyVFX = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -54,43 +56,51 @@
             this.c_Weapon_RestrictedScramble = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.c_Scramble_Weapon = new System.Windows.Forms.CheckBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tag_Rings = new System.Windows.Forms.TabPage();
             this.label10 = new System.Windows.Forms.Label();
             this.c_Rings_AnySpEffect = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.c_Rings_RestrictedScramble = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.c_Scramble_Rings = new System.Windows.Forms.CheckBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tab_Armor = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.c_Armor_AnySpEffect = new System.Windows.Forms.CheckBox();
             this.label14 = new System.Windows.Forms.Label();
             this.c_Armor_LimitedScramble = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
             this.c_Scramble_Armor = new System.Windows.Forms.CheckBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tab_Spells = new System.Windows.Forms.TabPage();
             this.label19 = new System.Windows.Forms.Label();
             this.c_Spell_AnyVFX = new System.Windows.Forms.CheckBox();
             this.label17 = new System.Windows.Forms.Label();
             this.c_Spell_LimitedScramble = new System.Windows.Forms.CheckBox();
             this.label18 = new System.Windows.Forms.Label();
             this.c_Scramble_Spells = new System.Windows.Forms.CheckBox();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tab_Goods = new System.Windows.Forms.TabPage();
             this.label23 = new System.Windows.Forms.Label();
             this.c_Goods_Skip_KeyItems = new System.Windows.Forms.CheckBox();
             this.label21 = new System.Windows.Forms.Label();
             this.c_Goods_LimitedScramble = new System.Windows.Forms.CheckBox();
             this.label22 = new System.Windows.Forms.Label();
             this.c_Scramble_Goods = new System.Windows.Forms.CheckBox();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.label26 = new System.Windows.Forms.Label();
-            this.c_Scramble_Faces = new System.Windows.Forms.CheckBox();
+            this.tab_Characters = new System.Windows.Forms.TabPage();
             this.label25 = new System.Windows.Forms.Label();
             this.c_Char_LimitedScramble = new System.Windows.Forms.CheckBox();
             this.label24 = new System.Windows.Forms.Label();
             this.c_Scramble_Char = new System.Windows.Forms.CheckBox();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tab_Faces = new System.Windows.Forms.TabPage();
+            this.label29 = new System.Windows.Forms.Label();
+            this.c_Scramble_Faces = new System.Windows.Forms.CheckBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.c_Faces_LimitedScramble = new System.Windows.Forms.CheckBox();
+            this.tag_Assets = new System.Windows.Forms.TabPage();
+            this.label31 = new System.Windows.Forms.Label();
+            this.c_Assets_ScramblePickups = new System.Windows.Forms.CheckBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.c_Assets_AnyVFX = new System.Windows.Forms.CheckBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.c_Assets_LimitedScramble = new System.Windows.Forms.CheckBox();
             this.label16 = new System.Windows.Forms.Label();
             this.c_Scramble_AssetParam = new System.Windows.Forms.CheckBox();
             this.l_status = new System.Windows.Forms.Label();
@@ -98,16 +108,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.b_ToggleOn = new System.Windows.Forms.Button();
             this.b_ToggleOff = new System.Windows.Forms.Button();
+            this.c_Char_IgnoreClasses = new System.Windows.Forms.CheckBox();
+            this.label32 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage_Bullet.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.tabPage5.SuspendLayout();
+            this.tab_Bullets.SuspendLayout();
+            this.tab_Weapons.SuspendLayout();
+            this.tag_Rings.SuspendLayout();
+            this.tab_Armor.SuspendLayout();
+            this.tab_Spells.SuspendLayout();
+            this.tab_Goods.SuspendLayout();
+            this.tab_Characters.SuspendLayout();
+            this.tab_Faces.SuspendLayout();
+            this.tag_Assets.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -161,62 +174,84 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage_Bullet);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Controls.Add(this.tabPage8);
-            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tab_Bullets);
+            this.tabControl1.Controls.Add(this.tab_Weapons);
+            this.tabControl1.Controls.Add(this.tag_Rings);
+            this.tabControl1.Controls.Add(this.tab_Armor);
+            this.tabControl1.Controls.Add(this.tab_Spells);
+            this.tabControl1.Controls.Add(this.tab_Goods);
+            this.tabControl1.Controls.Add(this.tab_Characters);
+            this.tabControl1.Controls.Add(this.tab_Faces);
+            this.tabControl1.Controls.Add(this.tag_Assets);
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(667, 262);
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPage_Bullet
+            // tab_Bullets
             // 
-            this.tabPage_Bullet.Controls.Add(this.label20);
-            this.tabPage_Bullet.Controls.Add(this.c_Bullet_Spam);
-            this.tabPage_Bullet.Controls.Add(this.label12);
-            this.tabPage_Bullet.Controls.Add(this.c_Bullet_AnySpEffect);
-            this.tabPage_Bullet.Controls.Add(this.label4);
-            this.tabPage_Bullet.Controls.Add(this.c_Bullet_AnyVFX);
-            this.tabPage_Bullet.Controls.Add(this.label3);
-            this.tabPage_Bullet.Controls.Add(this.c_Scramble_Bullet);
-            this.tabPage_Bullet.Location = new System.Drawing.Point(4, 24);
-            this.tabPage_Bullet.Name = "tabPage_Bullet";
-            this.tabPage_Bullet.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Bullet.Size = new System.Drawing.Size(659, 234);
-            this.tabPage_Bullet.TabIndex = 0;
-            this.tabPage_Bullet.Text = "Bullet";
-            this.tabPage_Bullet.UseVisualStyleBackColor = true;
+            this.tab_Bullets.Controls.Add(this.label27);
+            this.tab_Bullets.Controls.Add(this.c_Bullet_LimitedScramble);
+            this.tab_Bullets.Controls.Add(this.label20);
+            this.tab_Bullets.Controls.Add(this.c_Bullet_Spam);
+            this.tab_Bullets.Controls.Add(this.label12);
+            this.tab_Bullets.Controls.Add(this.c_Bullet_AnySpEffect);
+            this.tab_Bullets.Controls.Add(this.label4);
+            this.tab_Bullets.Controls.Add(this.c_Bullet_AnyVFX);
+            this.tab_Bullets.Controls.Add(this.label3);
+            this.tab_Bullets.Controls.Add(this.c_Scramble_Bullet);
+            this.tab_Bullets.Location = new System.Drawing.Point(4, 24);
+            this.tab_Bullets.Name = "tab_Bullets";
+            this.tab_Bullets.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_Bullets.Size = new System.Drawing.Size(659, 234);
+            this.tab_Bullets.TabIndex = 0;
+            this.tab_Bullets.Text = "Projectiles";
+            this.tab_Bullets.UseVisualStyleBackColor = true;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(252, 31);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(369, 30);
+            this.label27.TabIndex = 18;
+            this.label27.Text = "Only scramble a set of specified fields. \r\nThe list of fields can be found in the" +
+    " Assets/Field Lists/Bullets/ folder.";
+            // 
+            // c_Bullet_LimitedScramble
+            // 
+            this.c_Bullet_LimitedScramble.AutoSize = true;
+            this.c_Bullet_LimitedScramble.Location = new System.Drawing.Point(6, 31);
+            this.c_Bullet_LimitedScramble.Name = "c_Bullet_LimitedScramble";
+            this.c_Bullet_LimitedScramble.Size = new System.Drawing.Size(140, 19);
+            this.c_Bullet_LimitedScramble.TabIndex = 17;
+            this.c_Bullet_LimitedScramble.Text = "Use Limited Scramble";
+            this.c_Bullet_LimitedScramble.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(252, 112);
+            this.label20.Location = new System.Drawing.Point(252, 151);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(270, 15);
+            this.label20.Size = new System.Drawing.Size(289, 15);
             this.label20.TabIndex = 16;
-            this.label20.Text = "Allows insane bullet scrambling, may crash game.";
+            this.label20.Text = "Allows insane projectile scrambling, may crash game.";
             // 
             // c_Bullet_Spam
             // 
             this.c_Bullet_Spam.AutoSize = true;
-            this.c_Bullet_Spam.Location = new System.Drawing.Point(6, 112);
+            this.c_Bullet_Spam.Location = new System.Drawing.Point(6, 151);
             this.c_Bullet_Spam.Name = "c_Bullet_Spam";
-            this.c_Bullet_Spam.Size = new System.Drawing.Size(144, 19);
+            this.c_Bullet_Spam.Size = new System.Drawing.Size(163, 19);
             this.c_Bullet_Spam.TabIndex = 15;
-            this.c_Bullet_Spam.Text = "Enable Bullet Madness\r\n";
+            this.c_Bullet_Spam.Text = "Enable Projectile Madness\r\n";
             this.c_Bullet_Spam.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(252, 73);
+            this.label12.Location = new System.Drawing.Point(252, 112);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(316, 30);
             this.label12.TabIndex = 14;
@@ -226,7 +261,7 @@
             // c_Bullet_AnySpEffect
             // 
             this.c_Bullet_AnySpEffect.AutoSize = true;
-            this.c_Bullet_AnySpEffect.Location = new System.Drawing.Point(6, 73);
+            this.c_Bullet_AnySpEffect.Location = new System.Drawing.Point(6, 112);
             this.c_Bullet_AnySpEffect.Name = "c_Bullet_AnySpEffect";
             this.c_Bullet_AnySpEffect.Size = new System.Drawing.Size(124, 19);
             this.c_Bullet_AnySpEffect.TabIndex = 13;
@@ -236,7 +271,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(252, 31);
+            this.label4.Location = new System.Drawing.Point(252, 70);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(281, 30);
             this.label4.TabIndex = 3;
@@ -246,7 +281,7 @@
             // c_Bullet_AnyVFX
             // 
             this.c_Bullet_AnyVFX.AutoSize = true;
-            this.c_Bullet_AnyVFX.Location = new System.Drawing.Point(6, 31);
+            this.c_Bullet_AnyVFX.Location = new System.Drawing.Point(6, 70);
             this.c_Bullet_AnyVFX.Name = "c_Bullet_AnyVFX";
             this.c_Bullet_AnyVFX.Size = new System.Drawing.Size(101, 19);
             this.c_Bullet_AnyVFX.TabIndex = 2;
@@ -267,28 +302,28 @@
             this.c_Scramble_Bullet.AutoSize = true;
             this.c_Scramble_Bullet.Location = new System.Drawing.Point(6, 6);
             this.c_Scramble_Bullet.Name = "c_Scramble_Bullet";
-            this.c_Scramble_Bullet.Size = new System.Drawing.Size(108, 19);
+            this.c_Scramble_Bullet.Size = new System.Drawing.Size(132, 19);
             this.c_Scramble_Bullet.TabIndex = 0;
-            this.c_Scramble_Bullet.Text = "Scramble Bullet";
+            this.c_Scramble_Bullet.Text = "Scramble Projectiles";
             this.c_Scramble_Bullet.UseVisualStyleBackColor = true;
             // 
-            // tabPage1
+            // tab_Weapons
             // 
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.c_Weapon_AnyVFX);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.c_Weapon_AnySpEffect);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.c_Weapon_RestrictedScramble);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.c_Scramble_Weapon);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(659, 234);
-            this.tabPage1.TabIndex = 1;
-            this.tabPage1.Text = "Weapons";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tab_Weapons.Controls.Add(this.label13);
+            this.tab_Weapons.Controls.Add(this.c_Weapon_AnyVFX);
+            this.tab_Weapons.Controls.Add(this.label11);
+            this.tab_Weapons.Controls.Add(this.c_Weapon_AnySpEffect);
+            this.tab_Weapons.Controls.Add(this.label5);
+            this.tab_Weapons.Controls.Add(this.c_Weapon_RestrictedScramble);
+            this.tab_Weapons.Controls.Add(this.label8);
+            this.tab_Weapons.Controls.Add(this.c_Scramble_Weapon);
+            this.tab_Weapons.Location = new System.Drawing.Point(4, 24);
+            this.tab_Weapons.Name = "tab_Weapons";
+            this.tab_Weapons.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_Weapons.Size = new System.Drawing.Size(659, 234);
+            this.tab_Weapons.TabIndex = 1;
+            this.tab_Weapons.Text = "Weapons";
+            this.tab_Weapons.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -369,21 +404,21 @@
             this.c_Scramble_Weapon.Text = "Scramble Weapons";
             this.c_Scramble_Weapon.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // tag_Rings
             // 
-            this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.c_Rings_AnySpEffect);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.c_Rings_RestrictedScramble);
-            this.tabPage2.Controls.Add(this.label7);
-            this.tabPage2.Controls.Add(this.c_Scramble_Rings);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(659, 234);
-            this.tabPage2.TabIndex = 2;
-            this.tabPage2.Text = "Rings";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tag_Rings.Controls.Add(this.label10);
+            this.tag_Rings.Controls.Add(this.c_Rings_AnySpEffect);
+            this.tag_Rings.Controls.Add(this.label6);
+            this.tag_Rings.Controls.Add(this.c_Rings_RestrictedScramble);
+            this.tag_Rings.Controls.Add(this.label7);
+            this.tag_Rings.Controls.Add(this.c_Scramble_Rings);
+            this.tag_Rings.Location = new System.Drawing.Point(4, 24);
+            this.tag_Rings.Name = "tag_Rings";
+            this.tag_Rings.Padding = new System.Windows.Forms.Padding(3);
+            this.tag_Rings.Size = new System.Drawing.Size(659, 234);
+            this.tag_Rings.TabIndex = 2;
+            this.tag_Rings.Text = "Rings";
+            this.tag_Rings.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -444,21 +479,21 @@
             this.c_Scramble_Rings.Text = "Scramble Rings";
             this.c_Scramble_Rings.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // tab_Armor
             // 
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.c_Armor_AnySpEffect);
-            this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.c_Armor_LimitedScramble);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.c_Scramble_Armor);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(659, 234);
-            this.tabPage3.TabIndex = 3;
-            this.tabPage3.Text = "Armor";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tab_Armor.Controls.Add(this.label9);
+            this.tab_Armor.Controls.Add(this.c_Armor_AnySpEffect);
+            this.tab_Armor.Controls.Add(this.label14);
+            this.tab_Armor.Controls.Add(this.c_Armor_LimitedScramble);
+            this.tab_Armor.Controls.Add(this.label15);
+            this.tab_Armor.Controls.Add(this.c_Scramble_Armor);
+            this.tab_Armor.Location = new System.Drawing.Point(4, 24);
+            this.tab_Armor.Name = "tab_Armor";
+            this.tab_Armor.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_Armor.Size = new System.Drawing.Size(659, 234);
+            this.tab_Armor.TabIndex = 3;
+            this.tab_Armor.Text = "Armor";
+            this.tab_Armor.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -519,21 +554,21 @@
             this.c_Scramble_Armor.Text = "Scramble Armor";
             this.c_Scramble_Armor.UseVisualStyleBackColor = true;
             // 
-            // tabPage4
+            // tab_Spells
             // 
-            this.tabPage4.Controls.Add(this.label19);
-            this.tabPage4.Controls.Add(this.c_Spell_AnyVFX);
-            this.tabPage4.Controls.Add(this.label17);
-            this.tabPage4.Controls.Add(this.c_Spell_LimitedScramble);
-            this.tabPage4.Controls.Add(this.label18);
-            this.tabPage4.Controls.Add(this.c_Scramble_Spells);
-            this.tabPage4.Location = new System.Drawing.Point(4, 24);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(659, 234);
-            this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "Spells";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tab_Spells.Controls.Add(this.label19);
+            this.tab_Spells.Controls.Add(this.c_Spell_AnyVFX);
+            this.tab_Spells.Controls.Add(this.label17);
+            this.tab_Spells.Controls.Add(this.c_Spell_LimitedScramble);
+            this.tab_Spells.Controls.Add(this.label18);
+            this.tab_Spells.Controls.Add(this.c_Scramble_Spells);
+            this.tab_Spells.Location = new System.Drawing.Point(4, 24);
+            this.tab_Spells.Name = "tab_Spells";
+            this.tab_Spells.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_Spells.Size = new System.Drawing.Size(659, 234);
+            this.tab_Spells.TabIndex = 4;
+            this.tab_Spells.Text = "Spells";
+            this.tab_Spells.UseVisualStyleBackColor = true;
             // 
             // label19
             // 
@@ -594,21 +629,21 @@
             this.c_Scramble_Spells.Text = "Scramble Spells";
             this.c_Scramble_Spells.UseVisualStyleBackColor = true;
             // 
-            // tabPage6
+            // tab_Goods
             // 
-            this.tabPage6.Controls.Add(this.label23);
-            this.tabPage6.Controls.Add(this.c_Goods_Skip_KeyItems);
-            this.tabPage6.Controls.Add(this.label21);
-            this.tabPage6.Controls.Add(this.c_Goods_LimitedScramble);
-            this.tabPage6.Controls.Add(this.label22);
-            this.tabPage6.Controls.Add(this.c_Scramble_Goods);
-            this.tabPage6.Location = new System.Drawing.Point(4, 24);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(659, 234);
-            this.tabPage6.TabIndex = 6;
-            this.tabPage6.Text = "Goods";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            this.tab_Goods.Controls.Add(this.label23);
+            this.tab_Goods.Controls.Add(this.c_Goods_Skip_KeyItems);
+            this.tab_Goods.Controls.Add(this.label21);
+            this.tab_Goods.Controls.Add(this.c_Goods_LimitedScramble);
+            this.tab_Goods.Controls.Add(this.label22);
+            this.tab_Goods.Controls.Add(this.c_Scramble_Goods);
+            this.tab_Goods.Location = new System.Drawing.Point(4, 24);
+            this.tab_Goods.Name = "tab_Goods";
+            this.tab_Goods.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_Goods.Size = new System.Drawing.Size(659, 234);
+            this.tab_Goods.TabIndex = 6;
+            this.tab_Goods.Text = "Goods";
+            this.tab_Goods.UseVisualStyleBackColor = true;
             // 
             // label23
             // 
@@ -668,40 +703,21 @@
             this.c_Scramble_Goods.Text = "Scramble Goods";
             this.c_Scramble_Goods.UseVisualStyleBackColor = true;
             // 
-            // tabPage7
+            // tab_Characters
             // 
-            this.tabPage7.Controls.Add(this.label26);
-            this.tabPage7.Controls.Add(this.c_Scramble_Faces);
-            this.tabPage7.Controls.Add(this.label25);
-            this.tabPage7.Controls.Add(this.c_Char_LimitedScramble);
-            this.tabPage7.Controls.Add(this.label24);
-            this.tabPage7.Controls.Add(this.c_Scramble_Char);
-            this.tabPage7.Location = new System.Drawing.Point(4, 24);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(659, 234);
-            this.tabPage7.TabIndex = 7;
-            this.tabPage7.Text = "Characters";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(252, 69);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(177, 15);
-            this.label26.TabIndex = 27;
-            this.label26.Text = "Scramble the FaceParam param.\r\n";
-            // 
-            // c_Scramble_Faces
-            // 
-            this.c_Scramble_Faces.AutoSize = true;
-            this.c_Scramble_Faces.Location = new System.Drawing.Point(6, 69);
-            this.c_Scramble_Faces.Name = "c_Scramble_Faces";
-            this.c_Scramble_Faces.Size = new System.Drawing.Size(107, 19);
-            this.c_Scramble_Faces.TabIndex = 26;
-            this.c_Scramble_Faces.Text = "Scramble Faces";
-            this.c_Scramble_Faces.UseVisualStyleBackColor = true;
+            this.tab_Characters.Controls.Add(this.label32);
+            this.tab_Characters.Controls.Add(this.c_Char_IgnoreClasses);
+            this.tab_Characters.Controls.Add(this.label25);
+            this.tab_Characters.Controls.Add(this.c_Char_LimitedScramble);
+            this.tab_Characters.Controls.Add(this.label24);
+            this.tab_Characters.Controls.Add(this.c_Scramble_Char);
+            this.tab_Characters.Location = new System.Drawing.Point(4, 24);
+            this.tab_Characters.Name = "tab_Characters";
+            this.tab_Characters.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_Characters.Size = new System.Drawing.Size(659, 234);
+            this.tab_Characters.TabIndex = 7;
+            this.tab_Characters.Text = "Characters";
+            this.tab_Characters.UseVisualStyleBackColor = true;
             // 
             // label25
             // 
@@ -737,32 +753,140 @@
             this.c_Scramble_Char.AutoSize = true;
             this.c_Scramble_Char.Location = new System.Drawing.Point(6, 6);
             this.c_Scramble_Char.Name = "c_Scramble_Char";
-            this.c_Scramble_Char.Size = new System.Drawing.Size(192, 19);
+            this.c_Scramble_Char.Size = new System.Drawing.Size(134, 19);
             this.c_Scramble_Char.TabIndex = 21;
-            this.c_Scramble_Char.Text = "Scramble Player-like Characters";
+            this.c_Scramble_Char.Text = "Scramble Characters";
             this.c_Scramble_Char.UseVisualStyleBackColor = true;
             // 
-            // tabPage8
+            // tab_Faces
             // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 24);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(659, 234);
-            this.tabPage8.TabIndex = 8;
-            this.tabPage8.Text = "Enemies";
-            this.tabPage8.UseVisualStyleBackColor = true;
+            this.tab_Faces.Controls.Add(this.label29);
+            this.tab_Faces.Controls.Add(this.c_Scramble_Faces);
+            this.tab_Faces.Controls.Add(this.label28);
+            this.tab_Faces.Controls.Add(this.c_Faces_LimitedScramble);
+            this.tab_Faces.Location = new System.Drawing.Point(4, 24);
+            this.tab_Faces.Name = "tab_Faces";
+            this.tab_Faces.Padding = new System.Windows.Forms.Padding(3);
+            this.tab_Faces.Size = new System.Drawing.Size(659, 234);
+            this.tab_Faces.TabIndex = 8;
+            this.tab_Faces.Text = "Faces";
+            this.tab_Faces.UseVisualStyleBackColor = true;
             // 
-            // tabPage5
+            // label29
             // 
-            this.tabPage5.Controls.Add(this.label16);
-            this.tabPage5.Controls.Add(this.c_Scramble_AssetParam);
-            this.tabPage5.Location = new System.Drawing.Point(4, 24);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(659, 234);
-            this.tabPage5.TabIndex = 5;
-            this.tabPage5.Text = "Misc";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(252, 6);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(177, 15);
+            this.label29.TabIndex = 29;
+            this.label29.Text = "Scramble the FaceParam param.\r\n";
+            // 
+            // c_Scramble_Faces
+            // 
+            this.c_Scramble_Faces.AutoSize = true;
+            this.c_Scramble_Faces.Location = new System.Drawing.Point(6, 6);
+            this.c_Scramble_Faces.Name = "c_Scramble_Faces";
+            this.c_Scramble_Faces.Size = new System.Drawing.Size(107, 19);
+            this.c_Scramble_Faces.TabIndex = 28;
+            this.c_Scramble_Faces.Text = "Scramble Faces";
+            this.c_Scramble_Faces.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(252, 31);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(363, 30);
+            this.label28.TabIndex = 27;
+            this.label28.Text = "Only scramble a set of specified fields. \r\nThe list of fields can be found in the" +
+    " Assets/Field Lists/Faces/ folder.\r\n";
+            // 
+            // c_Faces_LimitedScramble
+            // 
+            this.c_Faces_LimitedScramble.AutoSize = true;
+            this.c_Faces_LimitedScramble.Location = new System.Drawing.Point(6, 31);
+            this.c_Faces_LimitedScramble.Name = "c_Faces_LimitedScramble";
+            this.c_Faces_LimitedScramble.Size = new System.Drawing.Size(140, 19);
+            this.c_Faces_LimitedScramble.TabIndex = 26;
+            this.c_Faces_LimitedScramble.Text = "Use Limited Scramble";
+            this.c_Faces_LimitedScramble.UseVisualStyleBackColor = true;
+            // 
+            // tag_Assets
+            // 
+            this.tag_Assets.Controls.Add(this.label31);
+            this.tag_Assets.Controls.Add(this.c_Assets_ScramblePickups);
+            this.tag_Assets.Controls.Add(this.label30);
+            this.tag_Assets.Controls.Add(this.c_Assets_AnyVFX);
+            this.tag_Assets.Controls.Add(this.label26);
+            this.tag_Assets.Controls.Add(this.c_Assets_LimitedScramble);
+            this.tag_Assets.Controls.Add(this.label16);
+            this.tag_Assets.Controls.Add(this.c_Scramble_AssetParam);
+            this.tag_Assets.Location = new System.Drawing.Point(4, 24);
+            this.tag_Assets.Name = "tag_Assets";
+            this.tag_Assets.Padding = new System.Windows.Forms.Padding(3);
+            this.tag_Assets.Size = new System.Drawing.Size(659, 234);
+            this.tag_Assets.TabIndex = 5;
+            this.tag_Assets.Text = "Assets";
+            this.tag_Assets.UseVisualStyleBackColor = true;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(251, 112);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(338, 15);
+            this.label31.TabIndex = 33;
+            this.label31.Text = "Scramble the item pickups from assets with the full itemlot list.";
+            // 
+            // c_Assets_ScramblePickups
+            // 
+            this.c_Assets_ScramblePickups.AutoSize = true;
+            this.c_Assets_ScramblePickups.Location = new System.Drawing.Point(6, 111);
+            this.c_Assets_ScramblePickups.Name = "c_Assets_ScramblePickups";
+            this.c_Assets_ScramblePickups.Size = new System.Drawing.Size(119, 19);
+            this.c_Assets_ScramblePickups.TabIndex = 32;
+            this.c_Assets_ScramblePickups.Text = "Scramble Pickups";
+            this.c_Assets_ScramblePickups.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(251, 70);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(281, 30);
+            this.label30.TabIndex = 31;
+            this.label30.Text = "The VFX scramble will use all possible VFX instead of\r\njust those that were assig" +
+    "ned already.";
+            // 
+            // c_Assets_AnyVFX
+            // 
+            this.c_Assets_AnyVFX.AutoSize = true;
+            this.c_Assets_AnyVFX.Location = new System.Drawing.Point(6, 70);
+            this.c_Assets_AnyVFX.Name = "c_Assets_AnyVFX";
+            this.c_Assets_AnyVFX.Size = new System.Drawing.Size(101, 19);
+            this.c_Assets_AnyVFX.TabIndex = 30;
+            this.c_Assets_AnyVFX.Text = "Allow any VFX";
+            this.c_Assets_AnyVFX.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(251, 31);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(367, 30);
+            this.label26.TabIndex = 29;
+            this.label26.Text = "Only scramble a set of specified fields. \r\nThe list of fields can be found in the" +
+    " Assets/Field Lists/Assets/ folder.\r\n";
+            // 
+            // c_Assets_LimitedScramble
+            // 
+            this.c_Assets_LimitedScramble.AutoSize = true;
+            this.c_Assets_LimitedScramble.Location = new System.Drawing.Point(6, 31);
+            this.c_Assets_LimitedScramble.Name = "c_Assets_LimitedScramble";
+            this.c_Assets_LimitedScramble.Size = new System.Drawing.Size(140, 19);
+            this.c_Assets_LimitedScramble.TabIndex = 28;
+            this.c_Assets_LimitedScramble.Text = "Use Limited Scramble";
+            this.c_Assets_LimitedScramble.UseVisualStyleBackColor = true;
             // 
             // label16
             // 
@@ -778,9 +902,9 @@
             this.c_Scramble_AssetParam.AutoSize = true;
             this.c_Scramble_AssetParam.Location = new System.Drawing.Point(6, 6);
             this.c_Scramble_AssetParam.Name = "c_Scramble_AssetParam";
-            this.c_Scramble_AssetParam.Size = new System.Drawing.Size(168, 19);
+            this.c_Scramble_AssetParam.Size = new System.Drawing.Size(111, 19);
             this.c_Scramble_AssetParam.TabIndex = 19;
-            this.c_Scramble_AssetParam.Text = "Scramble Asset Parameters";
+            this.c_Scramble_AssetParam.Text = "Scramble Assets";
             this.c_Scramble_AssetParam.UseVisualStyleBackColor = true;
             // 
             // l_status
@@ -829,6 +953,25 @@
             this.b_ToggleOff.UseVisualStyleBackColor = true;
             this.b_ToggleOff.Click += new System.EventHandler(this.b_ToggleOff_Click);
             // 
+            // c_Char_IgnoreClasses
+            // 
+            this.c_Char_IgnoreClasses.AutoSize = true;
+            this.c_Char_IgnoreClasses.Location = new System.Drawing.Point(6, 71);
+            this.c_Char_IgnoreClasses.Name = "c_Char_IgnoreClasses";
+            this.c_Char_IgnoreClasses.Size = new System.Drawing.Size(186, 19);
+            this.c_Char_IgnoreClasses.TabIndex = 26;
+            this.c_Char_IgnoreClasses.Text = "Ignore Player Classes and Gifts";
+            this.c_Char_IgnoreClasses.UseVisualStyleBackColor = true;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(252, 72);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(287, 15);
+            this.label32.TabIndex = 27;
+            this.label32.Text = "Ignore the player classes and gifts during scrambling.";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -850,22 +993,24 @@
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage_Bullet.ResumeLayout(false);
-            this.tabPage_Bullet.PerformLayout();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
+            this.tab_Bullets.ResumeLayout(false);
+            this.tab_Bullets.PerformLayout();
+            this.tab_Weapons.ResumeLayout(false);
+            this.tab_Weapons.PerformLayout();
+            this.tag_Rings.ResumeLayout(false);
+            this.tag_Rings.PerformLayout();
+            this.tab_Armor.ResumeLayout(false);
+            this.tab_Armor.PerformLayout();
+            this.tab_Spells.ResumeLayout(false);
+            this.tab_Spells.PerformLayout();
+            this.tab_Goods.ResumeLayout(false);
+            this.tab_Goods.PerformLayout();
+            this.tab_Characters.ResumeLayout(false);
+            this.tab_Characters.PerformLayout();
+            this.tab_Faces.ResumeLayout(false);
+            this.tab_Faces.PerformLayout();
+            this.tag_Assets.ResumeLayout(false);
+            this.tag_Assets.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -880,7 +1025,7 @@
         private FolderBrowserDialog folderBrowserDialog_ModPath;
         private Panel panel1;
         private TabControl tabControl1;
-        private TabPage tabPage_Bullet;
+        private TabPage tab_Bullets;
         private Label l_status;
         private TextBox t_seed;
         private Label label2;
@@ -889,13 +1034,13 @@
         private Button b_ToggleOff;
         private Label label3;
         private CheckBox c_Bullet_AnyVFX;
-        private TabPage tabPage1;
+        private TabPage tab_Weapons;
         private Label label8;
         private CheckBox c_Scramble_Weapon;
         private Label label4;
         private Label label5;
         private CheckBox c_Weapon_RestrictedScramble;
-        private TabPage tabPage2;
+        private TabPage tag_Rings;
         private Label label6;
         private CheckBox c_Rings_RestrictedScramble;
         private Label label7;
@@ -908,39 +1053,51 @@
         private CheckBox c_Bullet_AnySpEffect;
         private Label label13;
         private CheckBox c_Weapon_AnyVFX;
-        private TabPage tabPage3;
+        private TabPage tab_Armor;
         private Label label9;
         private CheckBox c_Armor_AnySpEffect;
         private Label label14;
         private CheckBox c_Armor_LimitedScramble;
         private Label label15;
         private CheckBox c_Scramble_Armor;
-        private TabPage tabPage4;
+        private TabPage tab_Spells;
         private Label label19;
         private CheckBox c_Spell_AnyVFX;
         private Label label17;
         private CheckBox c_Spell_LimitedScramble;
         private Label label18;
         private CheckBox c_Scramble_Spells;
-        private TabPage tabPage5;
+        private TabPage tag_Assets;
         private Label label16;
         private CheckBox c_Scramble_AssetParam;
         private Label label20;
         private CheckBox c_Bullet_Spam;
-        private TabPage tabPage6;
+        private TabPage tab_Goods;
         private Label label21;
         private CheckBox c_Goods_LimitedScramble;
         private Label label22;
         private CheckBox c_Scramble_Goods;
         private Label label23;
         private CheckBox c_Goods_Skip_KeyItems;
-        private TabPage tabPage7;
-        private TabPage tabPage8;
+        private TabPage tab_Characters;
+        private TabPage tab_Faces;
         private CheckBox c_Char_LimitedScramble;
         private Label label24;
         private CheckBox c_Scramble_Char;
         private Label label25;
+        private Label label27;
+        private CheckBox c_Bullet_LimitedScramble;
+        private Label label29;
         private CheckBox c_Scramble_Faces;
+        private Label label28;
+        private CheckBox c_Faces_LimitedScramble;
         private Label label26;
+        private CheckBox c_Assets_LimitedScramble;
+        private Label label30;
+        private CheckBox c_Assets_AnyVFX;
+        private Label label31;
+        private CheckBox c_Assets_ScramblePickups;
+        private Label label32;
+        private CheckBox c_Char_IgnoreClasses;
     }
 }

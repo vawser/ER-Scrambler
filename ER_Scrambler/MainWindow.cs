@@ -210,7 +210,7 @@ namespace ER_Scrambler
                 // Bullet
                 progress.Report("Scramble: Bullets");
                 if (c_Scramble_Bullet.Checked)
-                    loadedParamWrappers = scrambler.ScrambleBullet(c_Bullet_AnyVFX.Checked, c_Bullet_AnySpEffect.Checked);
+                    loadedParamWrappers = scrambler.ScrambleBullet(c_Bullet_LimitedScramble.Checked, c_Bullet_AnyVFX.Checked, c_Bullet_AnySpEffect.Checked, c_Bullet_Spam.Checked);
 
                 // EquipParamWeapon
                 progress.Report("Scramble: Weapons");
@@ -239,13 +239,17 @@ namespace ER_Scrambler
 
                 // Characters
                 progress.Report("Scramble: Characters");
-                loadedParamWrappers = scrambler.ScrambleCharacters(c_Scramble_Char.Checked, c_Scramble_Faces.Checked, c_Char_LimitedScramble.Checked);
+                if (c_Scramble_Char.Checked)
+                    loadedParamWrappers = scrambler.ScrambleCharacters(c_Char_LimitedScramble.Checked, c_Char_IgnoreClasses.Checked);
 
-                // Enemies
+                // Faces
+                progress.Report("Scramble: Faces");
+                if (c_Scramble_Faces.Checked)
+                    loadedParamWrappers = scrambler.ScrambleFaces(c_Faces_LimitedScramble.Checked);
 
-                // Misc
-                progress.Report("Scramble: Misc");
-                 loadedParamWrappers = scrambler.ScrambleMisc(c_Scramble_AssetParam.Checked);
+                // Assets
+                progress.Report("Scramble: Assets");
+                 loadedParamWrappers = scrambler.ScrambleAssets(c_Assets_LimitedScramble.Checked, c_Assets_AnyVFX.Checked, c_Assets_ScramblePickups.Checked);
 
             }
             catch (Exception ex)
@@ -316,6 +320,7 @@ namespace ER_Scrambler
 
             // Bullet
             c_Scramble_Bullet.Enabled = state;
+            c_Bullet_LimitedScramble.Enabled = state;
             c_Bullet_AnyVFX.Enabled = state;
             c_Bullet_AnySpEffect.Enabled = state;
             c_Bullet_Spam.Enabled = state;
@@ -348,19 +353,25 @@ namespace ER_Scrambler
 
             // Characters
             c_Scramble_Char.Enabled = state;
-            c_Scramble_Faces.Enabled = state;
             c_Char_LimitedScramble.Enabled = state;
+            c_Char_IgnoreClasses.Enabled = state;
 
-            // Enemies
+            // Faces
+            c_Scramble_Faces.Enabled = state;
+            c_Faces_LimitedScramble.Enabled = state;
 
             // Misc
             c_Scramble_AssetParam.Enabled = state;
+            c_Assets_AnyVFX.Enabled = state;
+            c_Assets_LimitedScramble.Enabled = state;
+            c_Assets_ScramblePickups.Enabled = state;
         }
 
         private void ToggleCheckboxes(bool state)
         {
             // Bullet
             c_Scramble_Bullet.Checked = state;
+            c_Bullet_LimitedScramble.Checked = state;
             c_Bullet_AnyVFX.Checked = state;
             c_Bullet_AnySpEffect.Checked = state;
             c_Bullet_Spam.Checked = state;
@@ -393,13 +404,18 @@ namespace ER_Scrambler
 
             // Characters
             c_Scramble_Char.Checked = state;
-            c_Scramble_Faces.Checked = state;
             c_Char_LimitedScramble.Checked = state;
+            c_Char_IgnoreClasses.Checked = state;
 
-            // Enemies
+            // Faces
+            c_Scramble_Faces.Checked = state;
+            c_Faces_LimitedScramble.Checked = state;
 
             // Misc
             c_Scramble_AssetParam.Checked = state;
+            c_Assets_AnyVFX.Checked = state;
+            c_Assets_LimitedScramble.Checked = state;
+            c_Assets_ScramblePickups.Checked = state;
         }
     }
 }
